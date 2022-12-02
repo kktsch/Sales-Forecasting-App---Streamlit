@@ -24,7 +24,7 @@ if page == "Forecasting":
             with st.spinner("Forecasting..."):
                 fig1, fig2 = Make_Forecast(df)
         st.markdown("<h2 style='text-align:center;'></h2>", unsafe_allow_html=True)
-        st.markdown("<h2 style='text-align:center;'>Result</h2>", unsafe_allow_html=True)
+        st.markdown("<h2 style='text-align:center;'>Results</h2>", unsafe_allow_html=True)
         st.plotly_chart(fig1, use_container_width=True)
         st.markdown("<h1 style='text-align:center;'></h1>", unsafe_allow_html=True)
         st.markdown("<h2 style='text-align:center;'>Predictions</h2>", unsafe_allow_html=True)
