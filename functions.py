@@ -107,7 +107,7 @@ def Make_Forecast(df):
     line_color='rgba(0, 0, 255, 0.5)',showlegend=False))
     fig2.add_trace(go.Scatter(name='95% Confidence', x=forecast_dates[1:],y=upper_pred.ravel(),
     line_color='rgba(0, 0, 255, 0.5)', fill='tonexty',fillcolor='rgba(255, 0, 0, 0.1)'))
-    fig2.update_layout(xaxis_title="Date",yaxis_title="Sales",width=600, height=400, margin=dict(t=20,l=0,r=0))
+    fig2.update_layout(xaxis_title="Date",yaxis_title="Sales",width=500, height=400, margin=dict(t=20,l=0,r=0))
 
     return fig1, fig2
 
